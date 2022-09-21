@@ -33,8 +33,8 @@
             this.button3 = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.elementHost1 = new System.Windows.Forms.Integration.ElementHost();
-            this.addComment1 = new UltraMarker.addComment();
+            // not working linux this.elementHost1 = new System.Windows.Forms.Integration.ElementHost();
+           // this.addComment1 = new UltraMarker.addComment();
             this.SuspendLayout();
             // 
             // button1
@@ -95,6 +95,7 @@
             // 
             // elementHost1
             // 
+            /* not working linux
             this.elementHost1.Location = new System.Drawing.Point(9, 24);
             this.elementHost1.Margin = new System.Windows.Forms.Padding(2);
             this.elementHost1.Name = "elementHost1";
@@ -102,7 +103,8 @@
             this.elementHost1.TabIndex = 7;
             this.elementHost1.Text = "elementHost1";
             this.elementHost1.Child = this.addComment1;
-            // 
+            */
+// 
             // addForm2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -116,7 +118,7 @@
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
-            this.Controls.Add(this.elementHost1);
+            // not working linux this.Controls.Add(this.elementHost1);
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "addForm2";
             this.Text = "Additional Comments";
@@ -132,7 +134,8 @@
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Integration.ElementHost elementHost1;
-        private addComment addComment1;
+        // not working linux
+        //private System.Windows.Forms.Integration.ElementHost elementHost1;
+        //private addComment addComment1;
     }
 }

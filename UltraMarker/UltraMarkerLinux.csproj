@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProjectGuid>{7CC1B510-E04B-433E-A64A-257A5793F3BD}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>UltraMarkerLinux</RootNamespace>
+    <AssemblyName>UltraMarkerLinux</AssemblyName>
+    <TargetFrameworkVersion>v4.7</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug</OutputPath>
+    <DefineConstants>DEBUG;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Data" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Program.cs" />
+    <Compile Include="Form1.cs" />
+    <Compile Include="assessForm.cs" />
+    <Compile Include="reportForm.cs" />
+    <Compile Include="CommentForm.cs" />
+    <Compile Include="GradeGroup.cs" />
+    <Compile Include="addForm.cs" />
+    <Compile Include="addForm2.cs" />
+    <Compile Include="WeightReport.cs" />
+    <Compile Include="assessForm.Designer.cs" />
+    <Compile Include="Form1.Designer.cs" />
+    <Compile Include="addForm.Designer.cs" />
+    <Compile Include="addForm2.Designer.cs" />
+    <Compile Include="CommentForm.Designer.cs" />
+    <Compile Include="GradeGroup.Designer.cs" />
+    <Compile Include="reportForm.Designer.cs" />
+    <Compile Include="WeightReport.Designer.cs" />
+    <Compile Include="InputForm.cs" />
+    <Compile Include="InputForm.Designer.cs" />
+    <Compile Include="labelForm.cs" />
+    <Compile Include="labelForm.Designer.cs" />
+    <Compile Include="CTForm.cs" />
+    <Compile Include="CTForm.Designer.cs" />
+    <Compile Include="GradeTypeForm.cs" />
+    <Compile Include="GradeTypeForm.Designer.cs" />
+    <Compile Include="SessionForm.cs" />
+    <Compile Include="SessionForm.Designer.cs" />
+    <Compile Include="feedselectForm.cs" />
+    <Compile Include="feedselectForm.Designer.cs" />
+    <Compile Include="ShowLO.cs" />
+    <Compile Include="ShowLO.Designer.cs" />
+    <Compile Include="help.cs" />
+    <Compile Include="help.Designer.cs" />
+    <Compile Include="PeerForm.cs" />
+    <Compile Include="PeerForm.Designer.cs" />
+    <Compile Include="summaryForm.cs" />
+    <Compile Include="summaryForm.Designer.cs" />
+    <Compile Include="summaryShowForm.cs" />
+    <Compile Include="summaryShowForm.Designer.cs" />
+    <Compile Include="CriteriaSelectionForm.cs" />
+    <Compile Include="CriteriaSelectionForm.Designer.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="addForm.resx" />
+    <None Include="addForm2.resx" />
+    <None Include="assessForm.resx" />
+    <None Include="CommentForm.resx" />
+    <None Include="CriteriaSelectionForm.resx" />
+    <None Include="CTForm.resx" />
+    <None Include="feedselectForm.resx" />
+    <None Include="Form1.resx" />
+    <None Include="GradeGroup.resx" />
+    <None Include="GradeTypeForm.resx" />
+    <None Include="help.resx" />
+    <None Include="InputForm.resx" />
+    <None Include="labelForm.resx" />
+    <None Include="loForm.resx" />
+    <None Include="PeerForm.resx" />
+    <None Include="reportForm.resx" />
+    <None Include="SessionForm.resx" />
+    <None Include="summaryForm.resx" />
+    <None Include="summaryShowForm.resx" />
+    <None Include="WeightReport.resx" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+</Project>

@@ -8,6 +8,8 @@ using System.Text;
 using System.Windows.Forms;
 using System.IO;
 
+
+// NW remove all addComment
 namespace UltraMarker
 {
     public partial class addForm2 : Form
@@ -31,14 +33,14 @@ namespace UltraMarker
         private void addForm2_Load(object sender, EventArgs e)
         {
             label2.Text = Passvalue[0];
-            addComment1.TextBox1.Text = Passvalue[1];
-            addComment1.ComFile = ComFile;
+            //addComment1.TextBox1.Text = Passvalue[1];
+            //addComment1.ComFile = ComFile;
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-                Passvalue[1] = addComment1.TextBox1.Text;
-                this.ComFile = addComment1.ComFile;
+              // Passvalue[1] = addComment1.TextBox1.Text;
+              //  this.ComFile = addComment1.ComFile;
                 this.Close();
         }
 
@@ -47,7 +49,7 @@ namespace UltraMarker
             DialogResult dialogResult = MessageBox.Show("Clear feedback comments for this criteria Yes/No?", "Clear comments", MessageBoxButtons.YesNo);
             if (dialogResult == DialogResult.Yes)
             {
-                addComment1.TextBox1.Text = "";
+              //  addComment1.TextBox1.Text = "";
             }
         }
 
@@ -85,14 +87,16 @@ namespace UltraMarker
 
         private void button2_Click(object sender, EventArgs e)
         {
-            this.ComFile = addComment1.ComFile;
+         //   this.ComFile = addComment1.ComFile;
             this.Close();
         }
 
+        /*Integration not found on Linux
         private void elementHost1_ChildChanged(object sender, System.Windows.Forms.Integration.ChildChangedEventArgs e)
         {
 
         }
+        */       
 
         private void label2_Click(object sender, EventArgs e)
         {

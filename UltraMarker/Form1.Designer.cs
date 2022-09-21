@@ -5344,13 +5344,14 @@
             // imageList1
             // 
             this.imageList1.ColorDepth = System.Windows.Forms.ColorDepth.Depth8Bit;
-            this.imageList1.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("imageList1.ImageStream")));
-            this.imageList1.TransparentColor = System.Drawing.Color.Transparent;
+          // NW causes crash  this.imageList1.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("imageList1.ImageStream")));
+            
+            /*this.imageList1.TransparentColor = System.Drawing.Color.Transparent;
             this.imageList1.Images.SetKeyName(0, "th.jpg");
             this.imageList1.Images.SetKeyName(1, "th (1).jpg");
             this.imageList1.Images.SetKeyName(2, "th (5).jpg");
             this.imageList1.Images.SetKeyName(3, "th (4).jpg");
-            this.imageList1.Images.SetKeyName(4, "th (3).jpg");
+            this.imageList1.Images.SetKeyName(4, "th (3).jpg");*/
             // 
             // saveFileDialog5
             // 
